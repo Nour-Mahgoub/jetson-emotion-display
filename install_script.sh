@@ -55,16 +55,11 @@ mkdir -p "$SRC_DIR/test"
 
 print_success "Workspace structure created"
 
-# 2. UPDATE SYSTEM
-print_status "Updating system packages..."
-sudo apt-get update -qq
+
 
 # 3. INSTALL DEPENDENCIES
 print_status "Installing dependencies..."
 sudo apt-get install -y \
-    python3-pip \
-    python3-opencv \
-    python3-numpy \
     python3-pil \
     ros-noetic-cv-bridge \
     ros-noetic-image-transport \
